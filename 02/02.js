@@ -93,3 +93,7 @@ ob.name = 'Jane'; // Modifying the original object
 console.log(name); // Output: John (name is still 'John' because it's a copy)
 ob.game = 'Chess'; // Adding a new property to the object
 console.log(ob); // Output: { name: 'Jane', age: 30, city: 'New York', hobbies: ['reading', 'traveling', 'swimming'], game: 'Chess' }
+
+//spread operator
+const newOb = { ...ob, country: 'USA' }; // Creating a new object with spread operator
+console.log(newOb); // Output: { name: 'Jane', age: 30, city: 'New York', hobbies: ['reading', 'traveling', 'swimming'], game: 'Chess', country: 'USA' }
