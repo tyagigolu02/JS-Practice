@@ -76,3 +76,78 @@ uArray.sort((a,b)=>{
     return a-b;
 });
 console.log(uArray);
+
+// price H2L or L2H
+
+const products = [
+    {productId: 1, productName: "P1" , price: 2000},
+    {productId: 2, productName: "P2" , price: 22000},
+    {productId: 3, productName: "P3" , price: 20000},
+    {productId: 4, productName: "P4" , price: 25000},
+    {productId: 5, productName: "P5" , price: 6000},
+    {productId: 6, productName: "P6" , price: 600},
+]
+
+//L2H
+products.slice(0).sort((a,b)=>{ // 
+    return a.price - b.price;
+});
+console.log(products);
+
+//H2L
+products.sort((a,b)=>{
+    return b.price - a.price;
+});
+console.log(products);
+
+
+
+//Find method
+
+const myArray = ["sheru","taffy","simpoli","damru","gaangulli"];
+function isLength(string){
+    return string.length === 3;
+}
+console.log(isLength(myArray));
+
+const prod = [
+    {productId: 1, productName: "P1" , price: 2000},
+    {productId: 2, productName: "P2" , price: 22000},
+    {productId: 3, productName: "P3" , price: 20000},
+    {productId: 4, productName: "P4" , price: 25000},
+    {productId: 5, productName: "P5" , price: 6000},
+    {productId: 6, productName: "P6" , price: 600},
+];
+
+const pp = prod.find((pro)=>pro.productId===4);
+console.log(pp);
+
+//every method
+
+const numbs = [1,2,3,4,5,6,7];
+
+const nu = numbs.every((number)=>number%2!==0);
+console.log(nu);
+
+//some method
+
+const ni = numbs.some((number)=>number===0);
+console.log(ni);
+
+
+//fill method
+
+const array = new Array(10).fill(0);
+console.log(array);
+
+
+//fill method
+//value , start , end+1
+
+array.fill(2,3,7);
+console.log(array);
+
+//splice method 
+// start , delete , insert
+array.splice(1,3,6);
+console.log(array);
