@@ -9,7 +9,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(44, 55, 63);
     font-weight: 700;
 }
 .header{
@@ -88,6 +88,8 @@ a{
     text-align: center;
     background: rgb(240,240,240);
     border-radius: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .signup-form{
     max-width: 800px;
@@ -102,5 +104,22 @@ a{
     display: block;
     width: 100%;
     padding: 0.5rem;
+    border-radius: 0.5rem;
 }
-.form
+.form-group{
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.signup-form textarea{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.signup-btn{
+    background: rgb(44, 55, 63);
+    color: white;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 5rem;
+}

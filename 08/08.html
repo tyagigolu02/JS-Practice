@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="08.css">
+    <script src="08.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -17,14 +19,14 @@
             </ul>
         </nav>
         <div class="headline">
-            <h1>Manage Your Task</h1>
+            <h1 id="main-heading">Manage Your Task <span style="display: none;">Hello</span></h1>
             <button class="btn btn-headline">Learn More</button>
         </div>
     </header>
     <section class="section-todo container">
         <h2>Your Plan For Today ?</h2>
         <form class="form-todo">
-            <input type="text" placeholder="Add ToDo">
+            <input type="text" placeholder="Add ToDo......">
             <input type="submit" value="Add ToDo" class="btn">
         </form>
     </section>
@@ -55,11 +57,10 @@
                 <label for="about">About Yourself</label>
                 <textarea name="about" id="about" cols="30" rows="10"></textarea>
             </div>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn signup-btn">Submit</button>
         </form>
 
     </section>
     
-    <script src="08.js"></script>
 </body>
 </html>
