@@ -79,4 +79,20 @@ const todoList = document.querySelector(".todo-list");
 
 //insertAdjacentHTML(where,html)
 /* afterend , beforeend , afterbegin , beforebegin ;
-todoList.insertAdjacentHTML("beforeend","<li>Teach Teachers</li>")
+todoList.insertAdjacentHTML("beforeend","<li>Teach Teachers</li>")  */
+
+//clone Nodes ---> cloneNodes(true)
+
+
+//static list vs live list
+
+// const listItems = document.querySelectorAll(".todo-list li");
+// const sixthLi = document.createElement("li");
+// sixthLi.textContent = "item-6";
+// const ul = document.querySelector(".todo-list");
+// ul.append(sixthLi);
+// console.log(ul);
+
+
+// querySelectorAll ----> static list denge
+// getElementBySomething ---> live list denge
