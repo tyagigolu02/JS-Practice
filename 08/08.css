@@ -61,11 +61,27 @@ a{
     margin-top: 5rem;
     text-align: center;
 }
+.bg-dark{
+    background: #000;
+    color: #eee;
+}
 .form-todo{
     min-height: 5vh;
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+}
+.todo-list{
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+.todo-list li{
+    padding: 0.7rem;
+    background: #444;
+    color: #eee;
+    margin-top: 1rem;
+    text-transform: capitalize;
 }
 .form-todo input{
     height: 100%;   
