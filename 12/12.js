@@ -31,7 +31,7 @@
 // }
 // myFun(myFun1);
 
-//callbacks , callback hell , pyramid of dom
+//callbacks , callback hell--pyramid of dom
 //Asynchronous programming
 
 const heading1 = document.querySelector(".heading1");
@@ -70,25 +70,36 @@ const heading7 = document.querySelector(".heading7");
 //     }, 1000)
 // }, 1000);
 
-function changeText(element, text, color, time, onSuccessCallback, onFailureCallback){
-    setTimeout(()=>{
-        if(element){
+function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
+    setTimeout(() => {
+        if (element) {
             element.textContent = text;
             element.style.color = color;
-            if(onSuccessCallback){
+            if (onSuccessCallback) {
                 onSuccessCallback();
-            }else{
+            } else {
                 onFailureCallback();
             }
-        }else{
-            console.log("kahlli hai bhai");
+        } else {
+            console.log("khalli hai bhai");
         }
-    },time)
+    }, time)
 };
-changeText(heading1,"HELLO WORLD","yellow", 1000,
-    ()=>{
-        changeText(heading2,"KYA KRRA BHAI","gray", 1000)},
-    ()=>{
-        changeText(heading2,"GADBAD HOGYI BHAI","red",1000)
-    }
-);
+
+
+// callback hell--pyramid of dom
+changeText(heading1, "HELLO WORLD", "yellow", 1000, () => {
+    changeText(heading2, "HELLO WORLD", "red", 1000, () => {
+        changeText(heading3, "HELLO WORLD", "blue", 1000, () => {
+            changeText(heading4, "HELLO WORLD", "green", 1000, () => {
+                changeText(heading5, "HELLO WORLD", "orange", 1000, () => {
+                    changeText(heading6, "HELLO WORLD", "pink", 1000, () => {
+                        changeText(heading7, "HELLO WORLD", "violet", 1000, () => {
+
+                        }, () => { console.log("Error in changing text for heading6") });
+                    }, () => { console.log("Error in changing text for heading5") });
+                }, () => { console.log("Error in changing text for heading4") });
+            }, () => { console.log("Error in changing text for heading3") });
+        }, () => { console.log("Error in changing text for heading2") });
+    }, () => { console.log("Error in changing text for heading1") });
+});
