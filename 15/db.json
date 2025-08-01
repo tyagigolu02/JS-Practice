@@ -1,0 +1,65 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title" },
+    { "id": "2", "title": "another title" }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    { "id": "1", "username": "user1", "email": "user1@example.com" },
+    { "id": "2", "username": "user2", "email": "user2@example.com" }
+  ],
+  "settings": {
+    "theme": "dark",
+    "notifications": true
+  },
+  "messages": [
+    { "id": "1", "content": "Hello, user1!", "userId": "1" },
+    { "id": "2", "content": "Welcome to the platform, user2!", "userId": "2" }
+  ],
+  "products": [
+    { "id": "1", "name": "Product A", "price": 29.99 },
+    { "id": "2", "name": "Product B", "price": 49.99 }
+  ],
+  "orders": [
+    { "id": "1", "productId": "1", "quantity": 2, "userId": "1" },
+    { "id": "2", "productId": "2", "quantity": 1, "userId": "2" }
+  ],
+  "categories": [
+    { "id": "1", "name": "Electronics" },
+    { "id": "2", "name": "Books" }
+  ],
+  "reviews": [
+    { "id": "1", "productId": "1", "rating": 5, "comment": "Great product!" },
+    { "id": "2", "productId": "2", "rating": 4, "comment": "Very informative." }
+  ],
+  "events": [
+    { "id": "1", "title": "Event One", "date": "2023-10-01" },
+    { "id": "2", "title": "Event Two", "date": "2023-10-15" }
+  ],
+  "attendees": [
+    { "id": "1", "eventId": "1", "userId": "1" },
+    { "id": "2", "eventId": "2", "userId": "2" }
+  ],
+  "tasks": [
+    { "id": "1", "title": "Task One", "completed": false },
+    { "id": "2", "title": "Task Two", "completed": true }
+  ],
+  "labels": [
+    { "id": "1", "name": "Urgent" },
+    { "id": "2", "name": "Important" }
+  ],
+  "notifications": [
+    { "id": "1", "message": "New comment on your post", "read": false },
+    { "id": "2", "message": "Your profile was updated", "read": true }
+  ],
+  "preferences": {
+    "emailNotifications": true,
+    "pushNotifications": false
+  }
+}
